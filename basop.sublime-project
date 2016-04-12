@@ -2,7 +2,9 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": "htdocs/wp-content",
+			"folder_exclude_patterns": ["wp-content/languages", "wp-content/upgrade"],
+			"file_exclude_patterns": ["index.php"]
 		}
 	]
 }
