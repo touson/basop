@@ -1,0 +1,435 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"textal",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"last_filter": "wrap",
+		"selected_items":
+		[
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"syntasas",
+				"Set Syntax: Sass"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"syntajavas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/touson/Sites/basop"
+	],
+	"file_history":
+	[
+		"/Users/touson/Sites/basop/htdocs/composer.json",
+		"/Users/touson/Sites/basop/README.md",
+		"/Users/touson/Sites/basop/htdocs/config/app.php",
+		"/Users/touson/Sites/washroomadvertising.co.uk/washroom.sublime-project",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-config.php",
+		"/Users/touson/Sites/washroomadvertising.co.uk/config.rb",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content/themes/twentyfourteen/scss/core/_common.scss",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content/themes/washroom/scss/core/_common.scss",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/compass.rb",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/controllers/Page.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/layout/_footer.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/includes/footer.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/form_validation.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/contact.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/core/_common.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/models/contact_model.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/autoload.php",
+		"/Users/touson/Sites/rsfbathrooms/rsf.sublime-project",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/config.php",
+		"/Users/touson/Sites/ww2.theunderfloorheatingstore.com/app/config/form_validation.php",
+		"/Users/touson/Sites/ww2.theunderfloorheatingstore.com/app/models/contact_model.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/installation.php",
+		"/Users/touson/Sites/lbgroupltd.com/htdocs/wp-content/themes/lbgroup/news-page.php",
+		"/Users/touson/Sites/lbgroupltd.com/lbgroup.sublime-project",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/home.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/core.js",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/products.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/jquery.parallax-1.1.3.js",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/errors/html/error_404.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/routes.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/Default (OSX).sublime-keymap",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/includes/scripts.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_magnific.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_settings.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/style.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_magnific-popup.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/magnific_popup_1-1.js",
+		"/Users/touson/Sites/lbgroupltd.com/.gitignore",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/includes/footer.php",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/home.php",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/layout/_footer.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/core/_common.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/_var.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/js/core.js",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/includes/sub-footer.php",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/includes/header.php",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/core/_typography.scss",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/layout/_header.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/rsf.sublime-project",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/style.scss",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Compass/build.sh",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/css/style.css",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/config.rb",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Compass/README.markdown",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Installed Packages/SASS Build.sublime-package",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/.sassbuilder-config",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Compass/Compass.sublime-build",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Compass/package-metadata.json",
+		"/Users/touson/Docs/Work/RSF/library/rsficon/variables.scss",
+		"/Users/touson/Docs/Work/RSF/library/rsficon/style.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/mixin/_button.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/mixin/_breakpoint.scss",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/Users/touson/Desktop/svg/arrow-down.svg"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content/themes/washroom",
+			"/Users/touson/Sites/washroomadvertising.co.uk",
+			"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content",
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".gallery",
+			"gallery",
+			"htdocs/",
+			"other-site-link",
+			"pp-copy-and-brands",
+			"|xss_clean",
+			"phone",
+			"name",
+			"helper",
+			"libr",
+			"form-con",
+			"form",
+			"enquiry",
+			"from",
+			"ins-intro",
+			"body",
+			"IMG;?>/products/",
+			"mfp-fade",
+			"&",
+			"rsficon",
+			";\n",
+			"rsficon",
+			"#product-design",
+			"#hp-big-tap",
+			"#hp-intro",
+			"hp",
+			"p-intro",
+			"position_intro_block",
+			"#main-container",
+			"main-contain",
+			"set_window_top()",
+			"set_window_top",
+			"$c-lgrey",
+			"$c-xlgrey",
+			"$c-lgrey",
+			"lgrey",
+			"body",
+			"trim",
+			"dgrey"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"IMG;?>/products/thumbs/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 209.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Compass/Compass.sublime-build",
+	"project": "basop.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"test",
+				"htdocs/wp-content/themes/washroom/page-templates/testimonials.php"
+			],
+			[
+				"site-list",
+				"htdocs/wp-content/themes/washroom/page-templates/site-list.php"
+			],
+			[
+				"wp-confi",
+				"htdocs/wp-config.php"
+			],
+			[
+				"commonscs",
+				"htdocs/wp-content/themes/twentyfourteen/scss/core/_common.scss"
+			],
+			[
+				"contact",
+				"htdocs/app/views/contact.php"
+			],
+			[
+				"common",
+				"htdocs/resources/scss/core/_common.scss"
+			],
+			[
+				"foot",
+				"htdocs/app/views/includes/footer.php"
+			],
+			[
+				"footer",
+				"htdocs/resources/scss/layout/_footer.scss"
+			],
+			[
+				"auto",
+				"htdocs/app/config/autoload.php"
+			],
+			[
+				"form",
+				"htdocs/app/config/form_validation.php"
+			],
+			[
+				"page",
+				"htdocs/app/controllers/Page.php"
+			],
+			[
+				"insta",
+				"htdocs/app/views/installation.php"
+			],
+			[
+				"typog",
+				"htdocs/resources/scss/core/_typography.scss"
+			],
+			[
+				"produc",
+				"htdocs/app/views/products.php"
+			],
+			[
+				"paral",
+				"htdocs/resources/js/jquery.parallax-1.1.3.js"
+			],
+			[
+				"core",
+				"htdocs/resources/js/core.js"
+			],
+			[
+				"rout",
+				"htdocs/app/config/routes.php"
+			],
+			[
+				"script",
+				"htdocs/app/views/includes/scripts.php"
+			],
+			[
+				"home",
+				"htdocs/app/views/home.php"
+			],
+			[
+				"commonsc",
+				"htdocs/resources/scss/core/_common.scss"
+			],
+			[
+				"footerscs",
+				"htdocs/resources/scss/layout/_footer.scss"
+			],
+			[
+				"head",
+				"htdocs/app/views/includes/header.php"
+			],
+			[
+				"comm",
+				"htdocs/resources/scss/core/_common.scss"
+			],
+			[
+				"header",
+				"htdocs/app/views/includes/header.php"
+			],
+			[
+				"stylesc",
+				"resources/scss/style.scss"
+			],
+			[
+				"style",
+				"resources/css/style.css"
+			],
+			[
+				"reset",
+				"resources/scss/core/_reset.scss"
+			],
+			[
+				"hom",
+				"app/views/home.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
