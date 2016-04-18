@@ -11,6 +11,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "htdocs/wp-content/themes/basop/header.php",
+			"settings":
+			{
+				"buffer_size": 2817,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/wp-content/themes/basop/functions.php",
+			"settings":
+			{
+				"buffer_size": 6438,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/wp-content/themes/basop/comments.php",
+			"settings":
+			{
+				"buffer_size": 1930,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/wp-content/themes/basop/404.php",
+			"settings":
+			{
+				"buffer_size": 846,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/wp-content/themes/basop/footer.php",
+			"settings":
+			{
+				"buffer_size": 1133,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -19,10 +59,30 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 187.0,
-		"last_filter": "wrap",
+		"height": 67.0,
+		"last_filter": "enabkle",
 		"selected_items":
 		[
+			[
+				"enabkle",
+				"Package Control: Enable Package"
+			],
+			[
+				"disapack",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"wrap",
 				"Word Wrap: Toggle"
@@ -56,7 +116,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 521.0
 	},
 	"console":
 	{
@@ -77,10 +137,41 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/touson/Sites/basop"
+		"/Users/touson/Sites/basop/htdocs/wp-content",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/inc"
 	],
 	"file_history":
 	[
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/inc/template-tags.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/inc/customizer.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/functions.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/footer.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/comments.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/archive.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/404.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/style.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/header.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/inc/back-compat.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/index.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/page.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/search.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/searchform.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/sidebar.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/single.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/biography.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-none.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-page.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-search.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-single.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content.php",
+		"/Users/touson/Sites/basop/basop.sublime-project",
+		"/Users/touson/Sites/basop/htdocs/.gitignore",
+		"/Users/touson/Sites/basop/.gitignore",
+		"/Users/touson/Sites/basop/htdocs/wp-config.php",
 		"/Users/touson/Sites/basop/htdocs/composer.json",
 		"/Users/touson/Sites/basop/README.md",
 		"/Users/touson/Sites/basop/htdocs/config/app.php",
@@ -128,7 +219,6 @@
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/includes/sub-footer.php",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/includes/header.php",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/core/_typography.scss",
-		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/layout/_header.scss",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/rsf.sublime-project",
@@ -160,6 +250,8 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/touson/Sites/basop/htdocs/wp-content/themes",
+			"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop",
 			"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content/themes/washroom",
 			"/Users/touson/Sites/washroomadvertising.co.uk",
 			"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content",
@@ -172,6 +264,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\)\\)",
+			"))",
+			" )",
+			"( ",
+			"ie.css",
+			"twentysixteen",
+			"Twenty Sixteen",
+			"Twenty_Sixteen",
 			".gallery",
 			"gallery",
 			"htdocs/",
@@ -215,9 +315,12 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			")\\n)",
+			"basop",
+			"Basop",
 			"IMG;?>/products/thumbs/"
 		],
 		"reverse": false,
@@ -229,8 +332,449 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "htdocs/wp-content/themes/basop/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2774,
+								2774
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "htdocs/wp-content/themes/basop/functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6438,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2496,
+								2496
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 98.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "htdocs/wp-content/themes/basop/comments.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "htdocs/wp-content/themes/basop/404.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "htdocs/wp-content/themes/basop/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -277,7 +821,7 @@
 	"project": "basop.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -426,7 +970,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 257.0,
 	"status_bar_visible": true,
 	"template_settings":
