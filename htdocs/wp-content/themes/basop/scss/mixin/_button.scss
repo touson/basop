@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* ============================================ *
+ * Buttons
+ * ============================================ */
+
+@mixin button($text-color, $button-color, $button-hover) {
+
+    $button-hover: if($button-hover, $button-hover, darken($button-color, 10%));
+
+    background-color: $button-color;
+    display: inline-block;
+    padding: 6px 34px 6px;
+    border: 1px solid darken($button-color, 10%);
+    color: $text-color;
+    font-size: $f-size;
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: middle;
+    position: relative;
+    text-decoration: none;
+    .no-touch &:hover {
+        color: $text-color;
+        text-decoration: none;
+        border-color: darken($button-hover, 5%);
+        background-color: $button-hover;
+        cursor: pointer;
+    }
+}

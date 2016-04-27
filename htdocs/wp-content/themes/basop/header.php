@@ -16,56 +16,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
-	<?php wp_head(); ?>
+	<?php //wp_head(); ?>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<div class="site-inner">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'basop' ); ?></a>
 
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-header-main">
-
-				<?php if ( has_nav_menu( 'primary' ) ) : ?>
-					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'basop' ); ?></button>
-
-					<div id="site-header-menu" class="site-header-menu">
-						<?php if ( has_nav_menu( 'primary' ) ) : ?>
-							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'basop' ); ?>">
-								<?php
-									wp_nav_menu( array(
-										'theme_location' => 'primary',
-										'menu_class'     => 'primary-menu',
-									 ) );
-								?>
-							</nav><!-- .main-navigation -->
-						<?php endif; ?>
-					</div><!-- .site-header-menu -->
-				<?php endif; ?>
-			</div><!-- .site-header-main -->
-
-			<?php if ( get_header_image() ) : ?>
-				<?php
-					/**
-					 * Filter the default basop custom header sizes attribute.
-					 *
-					 * @since Basop 1.0
-					 *
-					 * @param string $custom_header_sizes sizes attribute
-					 * for Custom Header. Default '(max-width: 709px) 85vw,
-					 * (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px'.
-					 */
-					$custom_header_sizes = apply_filters( 'basop_custom_header_sizes', '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' );
+	<header>
+		<div class="container">
+			<a href="/" id="logo"><img src="<?php echo get_template_directory_uri();?>/img/general/logo.jpg" /></a>
+			<?php
+			if (has_nav_menu('primary'))
+			{
 				?>
-				<div class="header-image">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ); ?>" sizes="<?php echo esc_attr( $custom_header_sizes ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-					</a>
-				</div><!-- .header-image -->
-			<?php endif; // End header image check. ?>
-		</header><!-- .site-header -->
+				<a id="nav-trigger">b</a>
+				<nav role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'basop' ); ?>" id="main-nav">
+					<?php
+					wp_nav_menu(array(
+						'theme_location' => 'primary',
+						'menu_class'     => 'primary-menu',
+					));
+					?>
+				</nav>
+				<?php
+			}
+			?>
+		</div>
+	</header>
 
-		<div id="content" class="site-content">

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* ============================================ *
+ * Forms
+ * ============================================ */
+
+label {
+    display: block;
+    padding: 10px 0 4px 0;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+    border: 1px solid $c-grey;
+    border-radius: 0;
+    padding: 6px 12px;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select {
+    height: auto;
+    width: 100% !important;
+}
+
+textarea {
+    min-height: 97px;
+}
+
+/* Primary Buttons */
+.button,
+button {
+    @include button($c-text, $c-button, $c-button-hover);
+    @include border-radius(3px); 
+}

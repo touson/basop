@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* ============================================ *
+ * Common styling elements
+ * ============================================ */
+
+#main-container {
+    background: #fff;
+    margin: 80px auto 0 auto;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 0 30px;
+    img {
+        max-width: 100%;
+    }
+}
+
+.cta {
+    display: inline-block;
+    &:after {
+        content: $icon-arrow-flat-right;
+        display: inline-block;
+        font-family: 'rsficon';
+        margin-left: 4px;
+        vertical-align: middle;
+    }
+}
+
+.page-header {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    .header-image {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .intro-block {
+        background: rgba(0,0,0,0.7);
+        color: $c-white;
+        margin-top: 50px;
+        margin-left: 10px;
+        padding: 20px;
+        position: relative;
+        width: 40%;
+        z-index: 110;
+        h1 {
+            font-size: $f-size;
+            line-height: 18px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        p {
+            font-weight: $f-weight-light;
+        }
+    }
+}
+
+#hp-panels {
+    font-size: 0;
+    li {
+        display: inline-block;
+        padding: 12px 1% 0 1%;
+        vertical-align: top;
+        width: 25%;
+        .image-crop {
+            @include box-shadow(0 0 16px rgba(0,0,0,0.6));
+            border-radius: 113px;
+            height: 226px;
+            margin: 0 auto 20px auto;
+            overflow: hidden;
+            width: 226px;
+            img {
+                max-width:100%;
+                max-height:100%;
+            }
+        }
+        .colour-panel {
+            color: $c-white;
+            padding: 20px;
+            position: relative;
+            &.red {
+                background-color: $c-red-3;
+            }
+            &.blue {
+                background-color: $c-blue-3;
+            }
+            &.orange {
+                background-color: $c-orange-3;
+            }
+            &.green{
+                background-color: $c-green-3;
+            }
+            h2 {
+                font-size: $f-size-xl;
+                line-height: 17px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 14px;
+                font-weight: $f-weight-light;
+            }
+            .cta {
+                bottom: 20px;
+                color: $c-white;
+                font-size: 12px;
+                position: absolute;
+                right: 20px;
+                &:hover {
+                    color: $c-black;
+                }
+            }
+        }
+    }
+}
+
+@include bp(min-width, $bp-xsmall + 1) {
+
+}
+
+@include bp(min-width, $bp-small + 1) {
+
+}
+
+@include bp(min-width, $bp-medium + 1) {
+
+}
+
+@include bp(min-width, $bp-large + 1) {
+
+}
+
+@include bp(min-width, $bp-xlarge + 1) {
+
+}
