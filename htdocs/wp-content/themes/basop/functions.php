@@ -57,8 +57,7 @@ function basop_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus(array(
-		'primary' => __('Primary Menu', 'basop'),
-		'mobile' => __('Mobile Menu', 'basop')
+		'primary' => __('Primary Menu', 'basop')
 		));
 
 	/*
@@ -90,28 +89,6 @@ function basop_widgets_init() {
 		'name'          => __('Sidebar', 'basop'),
 		'id'            => 'sidebar-1',
 		'description'   => __('Add widgets here to appear in your sidebar.', 'basop'),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>'
-		)
-	);
-
-	register_sidebar(array(
-		'name'          => __('Content Bottom 1', 'basop'),
-		'id'            => 'sidebar-2',
-		'description'   => __('Appears at the bottom of the content on posts and pages.', 'basop'),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>'
-		)
-	);
-
-	register_sidebar(array(
-		'name'          => __('Content Bottom 2', 'basop'),
-		'id'            => 'sidebar-3',
-		'description'   => __('Appears at the bottom of the content on posts and pages.', 'basop'),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',

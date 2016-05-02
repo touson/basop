@@ -77,12 +77,20 @@ if(!class_exists('Production'))
          */
         public function save_post($post_id)
         {
+            print_r($_POST);
             // verify if this is an auto save routine.
             // If it is our form has not been submitted, so we dont want to do anything
             if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
-            {
                 return;
-            }
+
+            // verify this came from the our screen and with proper authorization,
+            // because save_post can be triggered at other times
+            if ( !isset( $_POST['dynamicMeta_noncename'] ) )
+                return;
+
+            // Verify the nonce field
+            if ( !wp_verify_nonce( $_POST['dynamicMeta_noncename'], plugin_basename( __FILE__ ) ) )
+                return;
 
             if(isset($_POST['post_type']) && $_POST['post_type'] == self::POST_TYPE && current_user_can('edit_post', $post_id))
             {
@@ -91,6 +99,19 @@ if(!class_exists('Production'))
                     // Update the post's meta field
                     update_post_meta($post_id, $field_name, $_POST[$field_name]);
                 }
+
+                // foreach($_POST['character'] as $attributes)
+                // {
+                //     update_post_meta($post_id, $attributes['title'], $attributes['cast_member']);
+                // }
+                // Grab character array from POST and save it using update_post_meta function
+                /*
+                ["character"]=>
+                    [1]=>
+                      ["title"]=>"test character"
+                      ["cast_member"]=>"chris"
+
+                 */
             }
             else
             {
@@ -122,11 +143,12 @@ if(!class_exists('Production'))
 
             // Add the primary cast members meta box
             add_meta_box(
-                sprintf('%s_section', Cast_Member::POST_TYPE),
+                sprintf('%s_section', 'character'),
                 sprintf('Select Primary %ss', ucwords(str_replace("_", " ", Cast_Member::POST_TYPE))),
                 array($this, 'add_primary_cast_meta_box'),
                 self::POST_TYPE
             );
+
         }
 
         /**

@@ -28,8 +28,10 @@ h1 {
 h2 {
     margin-bottom: 15px;
     padding: 0;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: $f-size-xxl;
+    line-height: $l-height-xxl;
+    text-transform: uppercase;
+    font-weight: $f-weight-bold;
 }
 
 h3 {

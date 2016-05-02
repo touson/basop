@@ -66,7 +66,7 @@ $c-lgrey:   #c6d1d8;
 $c-dgrey:  #444444;
 
 // Element colours
-$c-text: $c-grey;
+$c-text: $c-dgrey;
 
 // Notifications
 $c-danger: $c-red-5;
@@ -127,7 +127,16 @@ $f-size-xxs: 11px;
 $f-size-xxxs: 10px;
 
 // Line height
+$l-height-xxl: 20px;
+$l-height-xl: 18px;
+$l-height-l: 17px;
 
+$l-height: 16px;
+
+$l-height-s: 15px;
+$l-height-xs: 14px;
+$l-height-xxs: 13px;
+$l-height-xxxs: 12px;
 
 // Font weights
 $f-weight-thin:  100;
