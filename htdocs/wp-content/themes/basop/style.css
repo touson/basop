@@ -808,44 +808,45 @@ footer .copyright {
 }
 /* line 81, scss/core/_common.scss */
 #hp-panels li .image-crop img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: none;
+  height: 100%;
+  transform: translate(-25%, 0);
 }
-/* line 86, scss/core/_common.scss */
+/* line 87, scss/core/_common.scss */
 #hp-panels li .colour-panel {
   color: #FFFFFF;
   padding: 20px;
   position: relative;
 }
-/* line 90, scss/core/_common.scss */
+/* line 91, scss/core/_common.scss */
 #hp-panels li .colour-panel.red {
   background-color: #E23035;
 }
-/* line 93, scss/core/_common.scss */
+/* line 94, scss/core/_common.scss */
 #hp-panels li .colour-panel.blue {
   background-color: #1D8B86;
 }
-/* line 96, scss/core/_common.scss */
+/* line 97, scss/core/_common.scss */
 #hp-panels li .colour-panel.orange {
   background-color: #E48030;
 }
-/* line 99, scss/core/_common.scss */
+/* line 100, scss/core/_common.scss */
 #hp-panels li .colour-panel.green {
   background-color: #2EB927;
 }
-/* line 102, scss/core/_common.scss */
+/* line 103, scss/core/_common.scss */
 #hp-panels li .colour-panel h2 {
   font-size: 16px;
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 108, scss/core/_common.scss */
+/* line 109, scss/core/_common.scss */
 #hp-panels li .colour-panel p {
   font-size: 14px;
   font-weight: 300;
 }
-/* line 112, scss/core/_common.scss */
+/* line 113, scss/core/_common.scss */
 #hp-panels li .colour-panel .cta {
   bottom: 20px;
   color: #FFFFFF;
@@ -853,7 +854,7 @@ footer .copyright {
   position: absolute;
   right: 20px;
 }
-/* line 118, scss/core/_common.scss */
+/* line 119, scss/core/_common.scss */
 #hp-panels li .colour-panel .cta:hover {
   color: #000000;
 }

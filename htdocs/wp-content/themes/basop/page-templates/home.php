@@ -6,62 +6,71 @@
  * @subpackage UFHS
  * @since UFHS 1.0
  */
-?>
-<?php get_header();?>
+get_header();
+
+// Create WP_Query object for each block
+$blocks = array(
+    'latest event'=>'red',
+    'join us'=>'blue',
+    'rehearsals'=>'orange',
+    'events'=>'green'
+    );
+
+foreach($blocks as $blockName=>$colour)
+{
+    $varNameArray = explode(' ', $blockName);
+    $varNameArray[1] = isset($varNameArray[1]) ? ucwords($varNameArray[1]) : '' ;
+    $varName = implode('', $varNameArray);
+
+    $$varName = new WP_Query(['post_type'=>'homepage_block', 'name'=>$blockName]);
+    $$varName = $$varName ? reset($$varName->posts) : FALSE;
+}
+
+while(have_posts())
+{
+    the_post();
+    ?>
 
     <div class="page-header">
         <img src="<?php echo get_template_directory_uri();?>/img/banners/sweet-charity.jpg" alt="Sweet Charity" class="header-image">
         <div class="container">
             <div class="intro-block">
-                <h1>Entertaining Crowds For Over 100 Years</h1>
-                <p>enean venenatis lacus a nisi fringilla mattis vel quis orci. Proin blandit ex vel ex pretium, congue efficitur augue finibus. Quisque at quam vitae leo fermentum finibus vitae pretium enim. Morbi dui nibh, malesuada a euismod eget, ullamcorper sed tellus. Phasellus vel quam dictum, mattis magna</p>
+                <h1><?php echo get_post_meta($post->ID, 'Title', true)?></h1>
+                <?php the_content();?>
             </div>
         </div>
     </div>
 
     <div class="container">
         <ul id="hp-panels">
-            <li>
-                <div class="image-crop">
-                    <img src="<?php echo get_template_directory_uri();?>/img/configurable/latest-event.jpg" alt="">
-                </div>
-                <div class="colour-panel red">
-                    <h2>Latest show</h2>
-                    <p>blandit in tempus non, elementum ut neque. Proin non molestie nulla. Sed porta placerat odio, sed facilisis quam molestie et. Maecenas</p>
-                    <a href="#" class="cta">more info</a>
-                </div>
-            </li>
-            <li>
-                <div class="image-crop">
-                    <img src="<?php echo get_template_directory_uri();?>/img/configurable/join-us.jpg" alt="">
-                </div>
-                <div class="colour-panel blue">
-                    <h2>Join us</h2>
-                    <p>blandit in tempus non, elementum ut neque. Proin non molestie nulla. Sed porta placerat odio, sed facilisis quam molestie et. Maecenas</p>
-                    <a href="#" class="cta">more info</a>
-                </div>
-            </li>
-            <li>
-                <div class="image-crop">
-                    <img src="<?php echo get_template_directory_uri();?>/img/configurable/rehearsals.jpg" alt="">
-                </div>
-                <div class="colour-panel orange">
-                    <h2>Rehearsals</h2>
-                    <p>blandit in tempus non, elementum ut neque. Proin non molestie nulla. Sed porta placerat odio, sed facilisis quam molestie et. Maecenas</p>
-                    <a href="#" class="cta">more info</a>
-                </div>
-            </li>
-            <li>
-                <div class="image-crop">
-                    <img src="<?php echo get_template_directory_uri();?>/img/configurable/events.jpg" alt="">
-                </div>
-                <div class="colour-panel green">
-                    <h2>Social events</h2>
-                    <p>blandit in tempus non, elementum ut neque. Proin non molestie nulla. Sed porta placerat odio, sed facilisis quam molestie et. Maecenas</p>
-                    <a href="#" class="cta">more info</a>
-                </div>
-            </li>
+
+            <?php
+            foreach($blocks as $blockName=>$colour)
+            {
+                $varNameArray = explode(' ', $blockName);
+                $varNameArray[1] = isset($varNameArray[1]) ? ucwords($varNameArray[1]) : '' ;
+                $varName = implode('', $varNameArray);
+
+                if($$varName)
+                {
+                    ?>
+                    <li>
+                        <div class="image-crop">
+                            <?php echo get_the_post_thumbnail($$varName->ID, array(400, 400));?>
+                            <!-- <img src="<?php echo get_template_directory_uri();?>/img/configurable/latest-event.jpg" alt=""> -->
+                        </div>
+                        <div class="colour-panel <?php echo $colour;?>">
+                            <h2><?php echo $$varName->post_title;?></h2>
+                            <p><?php echo $$varName->post_content;?></p>
+                            <a href="<?php echo get_site_url() . '/' . get_post_meta($$varName->ID, 'page', true);?>" class="cta">more info</a>
+                        </div>
+                    </li>
+                    <?php
+                }
+            }
+            ?>
         </ul>
     </div>
-
-<?php get_footer();?>
+    <?php
+}
+get_footer();?>

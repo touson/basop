@@ -77,7 +77,6 @@ if(!class_exists('Production'))
          */
         public function save_post($post_id)
         {
-            print_r($_POST);
             // verify if this is an auto save routine.
             // If it is our form has not been submitted, so we dont want to do anything
             if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
