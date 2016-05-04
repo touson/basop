@@ -809,8 +809,12 @@ footer .copyright {
   position: relative;
   margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
+  background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 300px;
 }
 
 /* line 1, scss/general/_production.scss */
@@ -1022,36 +1026,40 @@ footer .copyright {
   }
 }
 /* line 2, scss/general/_homepage.scss */
-.page-header .intro-block {
+.home .page-header {
+  min-height: auto;
+}
+/* line 4, scss/general/_homepage.scss */
+.home .page-header .intro-block {
   background: rgba(0, 0, 0, 0.7);
   color: #FFFFFF;
   margin-top: 50px;
   margin-bottom: 20px;
   padding: 20px;
 }
-/* line 8, scss/general/_homepage.scss */
-.page-header .intro-block h1 {
+/* line 10, scss/general/_homepage.scss */
+.home .page-header .intro-block h1 {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-/* line 14, scss/general/_homepage.scss */
-.page-header .intro-block p {
+/* line 16, scss/general/_homepage.scss */
+.home .page-header .intro-block p {
   font-weight: 300;
 }
 
-/* line 20, scss/general/_homepage.scss */
+/* line 23, scss/general/_homepage.scss */
 #hp-panels {
   font-size: 0;
 }
-/* line 22, scss/general/_homepage.scss */
+/* line 25, scss/general/_homepage.scss */
 #hp-panels li {
   display: block;
   padding-top: 12px;
   margin-bottom: 30px;
 }
-/* line 26, scss/general/_homepage.scss */
+/* line 29, scss/general/_homepage.scss */
 #hp-panels li .image-crop {
   -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
@@ -1062,14 +1070,14 @@ footer .copyright {
   overflow: hidden;
   width: 226px;
 }
-/* line 33, scss/general/_homepage.scss */
+/* line 36, scss/general/_homepage.scss */
 #hp-panels li .image-crop img {
   max-width: none;
   width: auto;
   height: 100%;
   transform: translate(-25%, 0);
 }
-/* line 40, scss/general/_homepage.scss */
+/* line 43, scss/general/_homepage.scss */
 #hp-panels li .colour-panel {
   color: #FFFFFF;
   padding: 20px 20px 40px 20px;
@@ -1077,35 +1085,35 @@ footer .copyright {
   max-width: 300px;
   margin: 0 auto;
 }
-/* line 46, scss/general/_homepage.scss */
+/* line 49, scss/general/_homepage.scss */
 #hp-panels li .colour-panel.red {
   background-color: #E23035;
 }
-/* line 49, scss/general/_homepage.scss */
+/* line 52, scss/general/_homepage.scss */
 #hp-panels li .colour-panel.blue {
   background-color: #1D8B86;
 }
-/* line 52, scss/general/_homepage.scss */
+/* line 55, scss/general/_homepage.scss */
 #hp-panels li .colour-panel.orange {
   background-color: #E48030;
 }
-/* line 55, scss/general/_homepage.scss */
+/* line 58, scss/general/_homepage.scss */
 #hp-panels li .colour-panel.green {
   background-color: #2EB927;
 }
-/* line 58, scss/general/_homepage.scss */
+/* line 61, scss/general/_homepage.scss */
 #hp-panels li .colour-panel h2 {
   font-size: 16px;
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 64, scss/general/_homepage.scss */
+/* line 67, scss/general/_homepage.scss */
 #hp-panels li .colour-panel p {
   font-size: 14px;
   font-weight: 300;
 }
-/* line 68, scss/general/_homepage.scss */
+/* line 71, scss/general/_homepage.scss */
 #hp-panels li .colour-panel .cta {
   bottom: 20px;
   color: #FFFFFF;
@@ -1113,13 +1121,13 @@ footer .copyright {
   position: absolute;
   right: 20px;
 }
-/* line 74, scss/general/_homepage.scss */
+/* line 77, scss/general/_homepage.scss */
 #hp-panels li .colour-panel .cta:hover {
   color: #000000;
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 88, scss/general/_homepage.scss */
+  /* line 91, scss/general/_homepage.scss */
   #hp-panels li {
     display: inline-block;
     vertical-align: top;
@@ -1128,16 +1136,16 @@ footer .copyright {
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 99, scss/general/_homepage.scss */
+  /* line 102, scss/general/_homepage.scss */
   .page-header .intro-block {
     width: 50%;
   }
 
-  /* line 104, scss/general/_homepage.scss */
+  /* line 107, scss/general/_homepage.scss */
   #hp-panels li {
     width: 25%;
   }
-  /* line 106, scss/general/_homepage.scss */
+  /* line 109, scss/general/_homepage.scss */
   #hp-panels li .image-crop {
     border-radius: 79px;
     height: 158px;
@@ -1145,12 +1153,12 @@ footer .copyright {
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 117, scss/general/_homepage.scss */
+  /* line 120, scss/general/_homepage.scss */
   .page-header .intro-block {
     width: 40%;
   }
 
-  /* line 123, scss/general/_homepage.scss */
+  /* line 126, scss/general/_homepage.scss */
   #hp-panels li .image-crop {
     border-radius: 92px;
     height: 184px;
@@ -1158,13 +1166,13 @@ footer .copyright {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 134, scss/general/_homepage.scss */
+  /* line 137, scss/general/_homepage.scss */
   .page-header .intro-block {
     margin-left: 50px;
     width: 35%;
   }
 
-  /* line 141, scss/general/_homepage.scss */
+  /* line 144, scss/general/_homepage.scss */
   #hp-panels li .image-crop {
     border-radius: 114px;
     height: 228px;

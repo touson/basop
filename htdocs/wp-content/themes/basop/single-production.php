@@ -14,9 +14,8 @@ if (have_posts()) {
 	while (have_posts()) {
 		the_post(); ?>
 
-		<div class="page-header">
-	        <img src="http://basop.local/wp-content/uploads/2016/04/pic-002.jpg" class="header-image">
-	    </div>
+		<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full'); ?>
+		<div class="page-header" style="background-image:url(<?php echo $image[0];?>"></div>
 
 		<div class="container">
 

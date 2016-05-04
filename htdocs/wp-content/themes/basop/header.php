@@ -26,7 +26,7 @@
 
 	<header>
 		<div class="container">
-			<a href="/" id="logo"><img src="<?php echo get_template_directory_uri();?>/img/general/logo.jpg" /></a>
+			<a href="<?php echo get_home_url();?>" id="logo"><img src="<?php echo get_template_directory_uri();?>/img/general/logo.jpg" /></a>
 			<?php
 			if (has_nav_menu('primary'))
 			{

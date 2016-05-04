@@ -1,8 +1,11 @@
 {
 	"folders":
 	[
-        {
+        /*{
             "path": "/"
+        },*/
+        {
+            "path": "htdocs/wp-content/themes/basop",
         },
         {
             "path": "htdocs/wp-content/plugins",

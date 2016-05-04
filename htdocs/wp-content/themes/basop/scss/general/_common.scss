@@ -35,8 +35,9 @@
     position: relative;
     margin-bottom: 30px;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
+    background-position: center center;
+    @include background-size(cover);
+    min-height: 300px;
 }
 
 @include bp(min-width, $bp-xsmall + 1) {

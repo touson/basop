@@ -1,18 +1,21 @@
-.page-header {
-    .intro-block {
-        background: rgba(0,0,0,0.7);
-        color: $c-white;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        padding: 20px;
-        h1 {
-            font-size: $f-size;
-            line-height: 18px;
+.home {
+    .page-header {
+        min-height: auto;
+        .intro-block {
+            background: rgba(0,0,0,0.7);
+            color: $c-white;
+            margin-top: 50px;
             margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        p {
-            font-weight: $f-weight-light;
+            padding: 20px;
+            h1 {
+                font-size: $f-size;
+                line-height: 18px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            p {
+                font-weight: $f-weight-light;
+            }
         }
     }
 }
