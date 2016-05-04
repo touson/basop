@@ -1,9 +1,9 @@
 {
 	"folders":
 	[
-        /*{
+        {
             "path": "/"
-        },*/
+        },
         {
             "path": "htdocs/wp-content/plugins",
         },
