@@ -31,8 +31,8 @@ while(have_posts())
     the_post();
     ?>
 
-    <div class="page-header">
-        <img src="<?php echo get_template_directory_uri();?>/img/banners/sweet-charity.jpg" alt="Sweet Charity" class="header-image">
+    <div class="page-header" style="background-image:url(<?php echo get_template_directory_uri();?>/img/banners/sweet-charity.jpg);">
+        <!-- <img src="<?php echo get_template_directory_uri();?>/img/banners/sweet-charity.jpg" alt="Sweet Charity" class="header-image"> -->
         <div class="container">
             <div class="intro-block">
                 <h1><?php echo get_post_meta($post->ID, 'Title', true)?></h1>

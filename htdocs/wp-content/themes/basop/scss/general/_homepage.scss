@@ -1,57 +1,10 @@
-@charset "UTF-8";
-
-/* ============================================ *
- * Common styling elements
- * ============================================ */
-
-#main-container {
-    background: #fff;
-    margin: 80px auto 0 auto;
-    width: 100%;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    overflow: hidden;
-    padding: 0 30px;
-    img {
-        max-width: 100%;
-    }
-}
-
-.cta {
-    display: inline-block;
-    &:after {
-        content: $icon-arrow-flat-right;
-        display: inline-block;
-        font-family: 'rsficon';
-        margin-left: 4px;
-        vertical-align: middle;
-    }
-}
-
 .page-header {
-    position: relative;
-    height: 360px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    .header-image {
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-    }
     .intro-block {
         background: rgba(0,0,0,0.7);
         color: $c-white;
         margin-top: 50px;
-        margin-left: 10px;
+        margin-bottom: 20px;
         padding: 20px;
-        position: relative;
-        width: 40%;
-        z-index: 110;
         h1 {
             font-size: $f-size;
             line-height: 18px;
@@ -67,10 +20,9 @@
 #hp-panels {
     font-size: 0;
     li {
-        display: inline-block;
-        padding: 12px 1% 0 1%;
-        vertical-align: top;
-        width: 25%;
+        display: block;
+        padding-top: 12px;
+        margin-bottom: 30px;
         .image-crop {
             @include box-shadow(0 0 16px rgba(0,0,0,0.6));
             border-radius: 113px;
@@ -80,14 +32,17 @@
             width: 226px;
             img {
                 max-width: none;
+                width: auto;
                 height: 100%;
                 transform: translate(-25%, 0);
             }
         }
         .colour-panel {
             color: $c-white;
-            padding: 20px;
+            padding: 20px 20px 40px 20px;
             position: relative;
+            max-width: 300px;
+            margin: 0 auto;
             &.red {
                 background-color: $c-red-3;
             }
@@ -113,7 +68,7 @@
             .cta {
                 bottom: 20px;
                 color: $c-white;
-                font-size: 12px;
+                font-size: 14px;
                 position: absolute;
                 right: 20px;
                 &:hover {
@@ -129,17 +84,65 @@
 }
 
 @include bp(min-width, $bp-small + 1) {
-
+    #hp-panels {
+        li {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            padding: 12px 1% 0 1%;
+        }
+    }
 }
 
 @include bp(min-width, $bp-medium + 1) {
-
+    .page-header {
+        .intro-block {
+            width: 50%;
+        }
+    }
+    #hp-panels {
+        li {
+            width: 25%;
+            .image-crop {
+                border-radius: 79px;
+                height: 158px;
+                width: 158px;
+            }
+        }
+    }
 }
 
 @include bp(min-width, $bp-large + 1) {
-
+    .page-header {
+        .intro-block {
+            width: 40%;
+        }
+    }
+    #hp-panels {
+        li {
+            .image-crop {
+                border-radius: 92px;
+                height: 184px;
+                width: 184px;
+            }
+        }
+    }
 }
 
 @include bp(min-width, $bp-xlarge + 1) {
-
+    .page-header {
+        .intro-block {
+            margin-left: 50px;
+            width: 35%;
+        }
+    }
+    #hp-panels {
+        li {
+            .image-crop {
+                border-radius: 114px;
+                height: 228px;
+                width: 228px;
+            }
+        }
+    }
 }

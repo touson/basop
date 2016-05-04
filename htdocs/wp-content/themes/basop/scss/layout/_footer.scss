@@ -19,35 +19,35 @@ footer {
 }
 
 .footer-block {
-    display: inline-block;
-    width: 33.1%;
-    vertical-align: top;
+    display: block;
+    width: 100%;
+    text-align: center;
     h4 {
         font-size: $f-size;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-weight: $f-weight-normal;
     }
-    &.right {
-        text-align: right;
-    }
     .associated {
-        margin-bottom: 10px;
+        margin-bottom: 50px;
+        display: inline-block;
+        vertical-align: top;
+        width: 37%;
+        text-align: center;
         img {
-            display: inline-block;
-            margin-right: 10px;
-            max-width: 70px;
+            display: block;
+            margin: 0 auto 10px;
+            height: 40px;
         }
         span {
-            display: inline-block;
-            vertical-align: top;
+            display: block;
             font-size: $f-size-xs;
             font-weight: $f-weight-light;
             width: 130px;
         }
     }
     .social {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         text-align: center;
         li {
             display: inline-block;
@@ -66,7 +66,7 @@ footer {
         line-height: 32px;
         text-align: center;
         max-width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 40px;
     }
     address {
         font-size: $f-size-s;
@@ -74,9 +74,82 @@ footer {
     }
 }
 
-@include bp(min-width, $bp-small + 1) {
-}
+// ========================
+// Extra small breakpoint
+// ========================
+@include bp(min-width, $bp-xsmall + 1) {
 
+}
+// ========================
+// Small breakpoint
+// ========================
+@include bp(min-width, $bp-small + 1) {
+    .footer-block {
+        display: inline-block;
+        width: 33%;
+        vertical-align: top;
+        text-align: left;
+        &.right {
+            text-align: right;
+        }
+        h4 {
+            margin-bottom: 20px;
+        }
+        .associated {
+            margin-bottom: 20px;
+            display: block;
+            text-align: left;
+            width: auto;
+            img {
+                display: inline-block;
+                margin: 0 10px 0 0;
+                max-width: 70px;
+                height: auto;
+            }
+            span {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+        .script {
+            font-size: 34px;
+            line-height: 27px;
+        }
+        .social {
+            li {
+                margin-left: 8px;
+                font-size: 19px;
+            }
+        }
+    }
+}
+// ========================
+// Medium breakpoint
+// ========================
+@include bp(min-width, $bp-medium + 1) {
+
+}
+// ========================
+// Large breakpoint
+// ========================
 @include bp(min-width, $bp-large + 1) {
+    .footer-block {
+        .script {
+            font-size: 38px;
+            line-height: 32px;
+            margin-bottom: 0;
+        }
+        .social {
+            li {
+                margin-left: 12px;
+                font-size: 26px;
+            }
+        }
+    }
+}
+// ========================
+// Extra large breakpoint
+// ========================
+@include bp(min-width, $bp-xlarge + 1) {
 
 }

@@ -1,11 +1,17 @@
 {
 	"folders":
 	[
+        /*{
+            "path": "/"
+        },*/
+        {
+            "path": "htdocs/wp-content/plugins",
+        },
+        {
+            "path": "htdocs/wp-content/themes",
+        },
 		{
-            "path": "htdocs/wp-content",
-			// "path": "/",
-			"folder_exclude_patterns": ["wp-content/languages", "wp-content/upgrade"],
-			"file_exclude_patterns": ["index.php"]
+            "path": "htdocs/wp-content/uploads",
 		}
 	]
 }
