@@ -111,7 +111,17 @@ header {
 }
 
 @include bp(min-width, $bp-large + 1) {
-
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: $f-size-xl;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include bp(min-width, $bp-xlarge + 1) {

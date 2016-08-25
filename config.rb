@@ -8,6 +8,8 @@ sass_dir = "htdocs/wp-content/themes/basop/scss"
 images_dir = "htdocs/wp-content/themes/basop/img"
 javascripts_dir = "htdocs/wp-content/themes/basop/js"
 
+sourcemap = true
+
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 

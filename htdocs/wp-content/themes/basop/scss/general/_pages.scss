@@ -1,0 +1,32 @@
+.main-bio {
+    .main-bio-image {
+        display: block;
+        width: 100%;
+        border: 1px solid $c-lgrey;
+    }
+}
+
+@include bp(min-width, $bp-xsmall + 1) {
+
+}
+
+@include bp(min-width, $bp-small + 1) {
+    .main-bio {
+        .main-bio-image {
+            float: left;
+            max-width: 300px;
+            margin: 0 30px 30px 0;
+        }
+    }
+}
+
+@include bp(min-width, $bp-medium + 1) {
+}
+
+@include bp(min-width, $bp-large + 1) {
+
+}
+
+@include bp(min-width, $bp-xlarge + 1) {
+
+}

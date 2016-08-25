@@ -81,15 +81,23 @@
         ul {
             font-size: 0;
             li {
+                font-size: 13px;
                 display: block;
                 text-align: left;
-                p {
-                    font-size: $f-size-s;
-                    margin-bottom: 0;
-                    line-height: $l-height-xxl + 4;
-                    strong {
-
-                    }
+                width: 100%;
+                span {
+                    line-height: 15px;
+                    padding-bottom: 10px;
+                }
+                .name {
+                    font-weight: bold;
+                    width: 50%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .role {
+                    display: inline-block;
+                    vertical-align: top;
                 }
             }
         }

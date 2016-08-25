@@ -13,6 +13,10 @@ if(!class_exists('Cast_Member'))
         {
             // register actions
             add_action('init', array($this, 'init'));
+
+            if ( is_admin() ) {
+                add_action( 'admin_init', array( &$this, 'admin_init' ) );
+            }
         }
 
         /**
@@ -22,7 +26,7 @@ if(!class_exists('Cast_Member'))
         {
             // Initialize Post Type
             $this->create_post_type();
-            add_action('save_post', array($this, 'save_post'));
+            //add_action('save_post', array($this, 'save_post'));
         }
 
         /**
@@ -47,7 +51,7 @@ if(!class_exists('Cast_Member'))
                 'set_featured_image' => 'Set headshot',
                 'remove_featured_image' => 'Remove headshot',
                 'use_featured_image' => 'Use as headshot'
-            );
+                );
 
             register_post_type(self::POST_TYPE,
                 array(
@@ -57,36 +61,63 @@ if(!class_exists('Cast_Member'))
                     'description' => __("Cast member bio"),
                     'supports' => array(
                         'title', 'editor', 'thumbnail'
-                    ),
+                        ),
                     'menu_icon' => 'dashicons-admin-users'
-                )
-            );
+                    )
+                );
         }
 
         /**
-         * Save the metaboxes for this custom post type
+         * Initialize the admin, adding actions to properly display and handle
+         * the Cast custom post type add/edit page
          */
-        public function save_post($post_id)
-        {
-            // verify if this is an auto save routine.
-            // If it is our form has not been submitted, so we dont want to do anything
-            if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
-            {
-                return;
-            }
+        public function admin_init() {
+            global $pagenow;
 
-            if(isset($_POST['post_type']) && $_POST['post_type'] == self::POST_TYPE && current_user_can('edit_post', $post_id))
-            {
-                foreach($this->_meta as $field_name)
-                {
-                    // Update the post's meta field
-                    update_post_meta($post_id, $field_name, $_POST[$field_name]);
-                }
+            if ( $pagenow == 'post-new.php' || $pagenow == 'post.php' || $pagenow == 'edit.php' ) {
+                add_action( 'add_meta_boxes', array( &$this, 'meta_boxes' ) );
+                add_action( 'save_post', array( &$this, 'meta_boxes_save' ), 1, 2 );
             }
-            else
-            {
-                return;
-            }
+        }
+
+        /**
+         * Add and remove meta boxes from the edit page
+         */
+        public function meta_boxes() {
+            add_meta_box( 'cast-image', __( 'Cast Image' ), array( $this, 'cast_image_meta_box' ), self::POST_TYPE);
+        }
+
+
+        /**
+         * Save meta boxes
+         *
+         * Runs when a post is saved and does an action which the write panel save scripts can hook into.
+         */
+        public function meta_boxes_save( $post_id, $post ) {
+            if ( empty( $post_id ) || empty( $post ) || empty( $_POST ) ) return;
+            if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+            if ( is_int( wp_is_post_revision( $post ) ) ) return;
+            if ( is_int( wp_is_post_autosave( $post ) ) ) return;
+            if ( ! current_user_can( 'edit_post', $post_id ) ) return;
+            if ( $post->post_type != self::POST_TYPE ) return;
+
+            $this->process_cast_meta( $post_id, $post );
+        }
+
+
+        /**
+         * Function for processing and storing all cast data.
+         */
+        private function process_cast_meta( $post_id, $post ) {
+            update_post_meta( $post_id, '_image_id', $_POST['upload_image_id'] );
+        }
+
+        /**
+         * Display the image meta box
+         */
+        public function cast_image_meta_box($post) {
+            // Render the production details metabox
+            include(sprintf("%s/../templates/%s_metabox.php", dirname(__FILE__), "cast_image"));
         }
     }
 }

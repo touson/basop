@@ -625,6 +625,12 @@ header #nav-trigger:hover {
     border-left: none;
   }
 }
+@media only screen and (min-width: 960px) {
+  /* line 118, scss/layout/_header.scss */
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
 /* ============================================ *
 *  Footer
 * ============================================ */
@@ -774,28 +780,34 @@ footer .copyright {
  * ============================================ */
 /* line 7, scss/general/_common.scss */
 #main-container {
-  background: #fff;
-  margin: 80px auto 0 auto;
+  padding: 30px 0;
   width: 100%;
 }
 
-/* line 13, scss/general/_common.scss */
+/* line 12, scss/general/_common.scss */
 .container {
   margin: 0 auto;
   max-width: 1200px;
   overflow: hidden;
   padding: 0 30px;
 }
-/* line 18, scss/general/_common.scss */
+/* line 17, scss/general/_common.scss */
 .container img {
   max-width: 100%;
 }
 
-/* line 23, scss/general/_common.scss */
+/* line 22, scss/general/_common.scss */
+.full-width {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 28, scss/general/_common.scss */
 .cta {
   display: inline-block;
 }
-/* line 25, scss/general/_common.scss */
+/* line 30, scss/general/_common.scss */
 .cta:after {
   content: "R";
   display: inline-block;
@@ -804,7 +816,7 @@ footer .copyright {
   vertical-align: middle;
 }
 
-/* line 34, scss/general/_common.scss */
+/* line 39, scss/general/_common.scss */
 .page-header {
   position: relative;
   margin-bottom: 30px;
@@ -923,84 +935,97 @@ footer .copyright {
 }
 /* line 83, scss/general/_production.scss */
 .cast .full-cast-list ul li {
+  font-size: 13px;
   display: block;
   text-align: left;
+  width: 100%;
 }
-/* line 86, scss/general/_production.scss */
-.cast .full-cast-list ul li p {
-  font-size: 13px;
-  margin-bottom: 0;
-  line-height: 24px;
+/* line 88, scss/general/_production.scss */
+.cast .full-cast-list ul li span {
+  line-height: 15px;
+  padding-bottom: 10px;
+}
+/* line 92, scss/general/_production.scss */
+.cast .full-cast-list ul li .name {
+  font-weight: bold;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 98, scss/general/_production.scss */
+.cast .full-cast-list ul li .role {
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 101, scss/general/_production.scss */
+  /* line 109, scss/general/_production.scss */
   .show-details .show-details-body {
     font-size: 0;
   }
-  /* line 103, scss/general/_production.scss */
+  /* line 111, scss/general/_production.scss */
   .show-details .show-details-body .details-block {
     display: inline-block;
     width: 50%;
   }
-  /* line 106, scss/general/_production.scss */
+  /* line 114, scss/general/_production.scss */
   .show-details .show-details-body .details-block:nth-of-type(1n+3) {
     margin-bottom: 0;
   }
 
-  /* line 115, scss/general/_production.scss */
+  /* line 123, scss/general/_production.scss */
   .cast .principal-cast-list ul li {
     width: 84px;
   }
-  /* line 117, scss/general/_production.scss */
+  /* line 125, scss/general/_production.scss */
   .cast .principal-cast-list ul li:nth-of-type(4n+1) {
     margin-left: inherit;
   }
-  /* line 120, scss/general/_production.scss */
+  /* line 128, scss/general/_production.scss */
   .cast .principal-cast-list ul li:nth-of-type(5n+1) {
     margin-left: 0;
   }
-  /* line 128, scss/general/_production.scss */
+  /* line 136, scss/general/_production.scss */
   .cast .full-cast-list ul li {
     display: inline-block;
     width: 50%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 144, scss/general/_production.scss */
+  /* line 152, scss/general/_production.scss */
   .show-details {
     vertical-align: top;
     display: inline-block;
     width: 30%;
   }
-  /* line 149, scss/general/_production.scss */
+  /* line 157, scss/general/_production.scss */
   .show-details .show-details-body .details-block {
     display: block;
     width: 100%;
   }
-  /* line 152, scss/general/_production.scss */
+  /* line 160, scss/general/_production.scss */
   .show-details .show-details-body .details-block:nth-of-type(3n) {
     margin-bottom: 20px;
   }
 
-  /* line 158, scss/general/_production.scss */
+  /* line 166, scss/general/_production.scss */
   .synopsis {
     display: inline-block;
     width: 64%;
   }
 
-  /* line 165, scss/general/_production.scss */
+  /* line 173, scss/general/_production.scss */
   .cast .full-cast-list ul li {
     width: 33%;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 174, scss/general/_production.scss */
+  /* line 182, scss/general/_production.scss */
   .show-details {
     width: 19.8%;
   }
 
-  /* line 177, scss/general/_production.scss */
+  /* line 185, scss/general/_production.scss */
   .synopsis {
     width: 32%;
     margin-right: 4%;
@@ -1008,21 +1033,107 @@ footer .copyright {
     margin-bottom: 0;
   }
 
-  /* line 183, scss/general/_production.scss */
+  /* line 191, scss/general/_production.scss */
   .cast {
     display: inline-block;
     vertical-align: top;
     width: 37.5%;
   }
-  /* line 189, scss/general/_production.scss */
+  /* line 197, scss/general/_production.scss */
   .cast .full-cast-list ul li {
     width: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 201, scss/general/_production.scss */
+  /* line 209, scss/general/_production.scss */
   .cast .full-cast-list ul li {
     width: 50%;
+  }
+}
+/* line 2, scss/general/_productions.scss */
+.production-archive li {
+  width: 100%;
+  border-bottom: 1px solid #c6d1d8;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* line 8, scss/general/_productions.scss */
+.production-archive .image-container {
+  margin-bottom: 20px;
+}
+/* line 15, scss/general/_productions.scss */
+.production-archive .production-details p {
+  margin-bottom: 4px;
+}
+/* line 17, scss/general/_productions.scss */
+.production-archive .production-details p strong {
+  width: 60px;
+  display: inline-block;
+}
+/* line 22, scss/general/_productions.scss */
+.production-archive .production-details .full-details {
+  float: right;
+  margin-top: -22px;
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 37, scss/general/_productions.scss */
+  .production-archive li > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 41, scss/general/_productions.scss */
+  .production-archive li .image-container {
+    width: 45%;
+    margin-right: 3%;
+  }
+  /* line 44, scss/general/_productions.scss */
+  .production-archive li .image-container img {
+    width: 100%;
+  }
+  /* line 48, scss/general/_productions.scss */
+  .production-archive li .copy-container {
+    width: 51%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 58, scss/general/_productions.scss */
+  .production-archive li .image-container {
+    width: 38%;
+  }
+  /* line 61, scss/general/_productions.scss */
+  .production-archive li .copy-container {
+    width: 58%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 70, scss/general/_productions.scss */
+  .production-archive li {
+    width: 50%;
+  }
+  /* line 72, scss/general/_productions.scss */
+  .production-archive li .image-container {
+    width: 45%;
+  }
+  /* line 75, scss/general/_productions.scss */
+  .production-archive li .copy-container {
+    width: 51%;
+  }
+}
+/* line 2, scss/general/_pages.scss */
+.main-bio .main-bio-image {
+  display: block;
+  width: 100%;
+  border: 1px solid #c6d1d8;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 15, scss/general/_pages.scss */
+  .main-bio .main-bio-image {
+    float: left;
+    max-width: 300px;
+    margin: 0 30px 30px 0;
   }
 }
 /* line 2, scss/general/_homepage.scss */
@@ -1179,3 +1290,5 @@ footer .copyright {
     width: 228px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

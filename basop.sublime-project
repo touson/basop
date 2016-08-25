@@ -1,17 +1,12 @@
 {
 	"folders":
 	[
-        /*{
-            "path": "/"
-        },*/
+        {
+            "path": "htdocs/wp-content/plugins/productions",
+        },
         {
             "path": "htdocs/wp-content/themes/basop",
-        },
-        {
-            "path": "htdocs/wp-content/plugins",
-        },
-        {
-            "path": "htdocs/wp-content/themes",
+            "name": "theme"
         },
 		{
             "path": "htdocs/wp-content/uploads",

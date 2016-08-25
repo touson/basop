@@ -1,14 +1,6 @@
 <table>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="title">Title</label>
-        </th>
-        <td>
-            <input type="text" id="title" name="title" value="<?php echo @get_post_meta($post->ID, 'title', true); ?>" />
-        </td>
-    </tr>
-    <tr valign="top">
-        <th class="metabox_label_column">
             <label for="date">Date</label>
         </th>
         <td>
