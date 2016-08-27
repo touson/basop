@@ -11,7 +11,7 @@ if(!class_exists('Production'))
             'venue',
             'director',
             'ticket_url'
-        );
+            );
 
         private $castMembers;
 
@@ -62,7 +62,7 @@ if(!class_exists('Production'))
                 'set_featured_image' => sprintf('Set main %s image', $lower),
                 'remove_featured_image' => sprintf('Remove main %s image', $lower),
                 'use_featured_image' => sprintf('Use as main %s image', $lower)
-            );
+                );
 
             register_post_type(self::POST_TYPE,
                 array(
@@ -72,10 +72,10 @@ if(!class_exists('Production'))
                     'description' => __("This post type contains all information pertaining to a Production"),
                     'supports' => array(
                         'title', 'editor', 'excerpt', 'thumbnail'
-                    ),
+                        ),
                     'menu_icon' => 'dashicons-tickets'
-                )
-            );
+                    )
+                );
         }
 
         /**
@@ -101,11 +101,13 @@ if(!class_exists('Production'))
 
             if(isset($_POST['post_type']) && $_POST['post_type'] == self::POST_TYPE && current_user_can('edit_post', $post_id))
             {
-                foreach($_POST['characters'] as $id=>$character)
-                {
+                if(isset($_POST['characters'])) {
+                    foreach($_POST['characters'] as $id=>$character)
+                    {
                     // Validate all cast members submissions
-                    if ($character['title'] == '' || $character['cast_member'] == 'Select...')
-                        $this->errorHandler->add('invalid_cast_member', "ERROR: Please select a cast member and enter who they are playing");
+                        if ($character['title'] == '' || $character['cast_member'] == 'Select...')
+                            $this->errorHandler->add('invalid_cast_member', "ERROR: Please select a cast member and enter who they are playing");
+                    }
                 }
 
                 // If we have an error, get us out of here and don't save anything
@@ -119,8 +121,12 @@ if(!class_exists('Production'))
                     update_post_meta($post_id, $field_name, $_POST[$field_name]);
 
                 // Grab character array from POST and save it using update_post_meta function
-                update_post_meta($post_id, 'characters', serialize($_POST['characters']));
-                update_post_meta($post_id, 'secondary_characters', serialize($_POST['secondary_characters']));
+                if(isset($_POST['characters'])) {
+                    update_post_meta($post_id, 'characters', serialize($_POST['characters']));
+                }
+                if(isset($_POST['secondary_characters'])) {
+                    update_post_meta($post_id, 'secondary_characters', serialize($_POST['secondary_characters']));
+                }
             }
             else
             {
@@ -170,7 +176,7 @@ if(!class_exists('Production'))
                 sprintf('%s Information', ucwords(str_replace("_", " ", self::POST_TYPE))),
                 array($this, 'add_production_info_meta_boxes'),
                 self::POST_TYPE
-            );
+                );
 
             // Add the primary cast members meta box
             add_meta_box(
@@ -178,7 +184,7 @@ if(!class_exists('Production'))
                 sprintf('Select Primary %ss', ucwords(str_replace("_", " ", Cast_Member::POST_TYPE))),
                 array($this, 'add_primary_cast_meta_box'),
                 self::POST_TYPE
-            );
+                );
 
             // Add the secondary cast members meta box
             add_meta_box(
@@ -186,7 +192,7 @@ if(!class_exists('Production'))
                 sprintf('Select Remaining %ss', ucwords(str_replace("_", " ", Cast_Member::POST_TYPE))),
                 array($this, 'add_secondary_cast_meta_box'),
                 self::POST_TYPE
-            );
+                );
 
         }
 
