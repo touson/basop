@@ -1,9 +1,11 @@
 .production-archive {
     li {
         width: 100%;
-        border-bottom: 1px solid $c-lgrey;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
+        @include box-shadow(0 0 10px rgba(0,0,0,0.3));
+        &:hover {
+            @include background-image(linear-gradient(to bottom right, white, lighten($c-lgrey, 15%)));
+        }
     }
     .image-container {
         margin-bottom: 20px;
@@ -12,18 +14,15 @@
 
     }
     .production-details {
+        display: block;
         p {
             margin-bottom: 4px;
             strong {
-                width: 60px;
+                margin-right: 6px;
                 display: inline-block;
             }
         }
-        .full-details {
-            float: right;
-            margin-top: -22px;
-            position: relative;
-        }
+        margin-bottom: 10px;
     }
 }
 
@@ -40,13 +39,26 @@
             }
             .image-container {
                 width: 45%;
-                margin-right: 3%;
+                float: right;
+                margin-left: 3%;
                 img {
                     width: 100%;
                 }
             }
             .copy-container {
                 width: 51%;
+            }
+            .production-details {
+                p {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 51%;
+                    margin-right: 3%;
+                    &:nth-of-type(2) {
+                        width: 45%;
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
@@ -68,7 +80,13 @@
 @include bp(min-width, $bp-large + 1) {
     .production-archive {
         li {
-            width: 50%;
+            width: 47%;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 2%;
+            &:nth-of-type(2n) {
+                margin-right: 0;
+            }
             .image-container {
                 width: 45%;
             }

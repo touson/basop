@@ -78,6 +78,11 @@ function basop_setup() {
 add_action('after_setup_theme', 'basop_setup');
 
 /**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
  * Registers a widget area.
  *
  * @link https://developer.wordpress.org/reference/functions/register_sidebar/

@@ -14,8 +14,10 @@ if (have_posts()) {
 	while (have_posts()) {
 		the_post(); ?>
 
-		<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full'); ?>
-		<div class="page-header" style="background-image:url(<?php echo $image[0];?>"></div>
+		<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'large'); ?>
+		<div class="page-header" style="background-image:url(<?php echo $image[0];?>">
+			<?php echo the_title( '<div class="title">', '</div>' );?>
+		</div>
 
 			<div class="container">
 
