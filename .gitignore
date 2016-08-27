@@ -2,6 +2,8 @@
 # Wordpress
 # ----------
 
+*sublime*
+
 *.log
 htdocs/wp-config.php
 htdocs/wp-content/advanced-cache.php
@@ -14,11 +16,11 @@ htdocs/wp-content/uploads/
 htdocs/wp-content/wp-cache-config.php
 htdocs/wp-content/plugins/hello.php
 
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+htdocs/.htaccess
+htdocs/license.txt
+htdocs/readme.html
+htdocs/sitemap.xml
+htdocs/sitemap.xml.gz
 
 *.sass-cache
 
