@@ -20,7 +20,7 @@
     vertical-align: middle;
     position: relative;
     text-decoration: none;
-    .no-touch &:hover {
+    &:hover {
         color: $text-color;
         text-decoration: none;
         border-color: darken($button-hover, 5%);

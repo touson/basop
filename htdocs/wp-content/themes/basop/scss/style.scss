@@ -30,6 +30,7 @@
 // ----------------------------------------------
 // Layout
 
+@import "layout/global";
 @import "layout/header";
 @import "layout/footer";
 
@@ -40,4 +41,5 @@
 @import "general/production";
 @import "general/productions";
 @import "general/pages";
+@import "general/blog";
 @import "general/homepage";

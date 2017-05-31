@@ -1,0 +1,78 @@
+.blog-content {
+	padding-top: 30px;
+	width: 73%;
+	margin-right: 4.5%;
+	display: inline-block;
+	vertical-align: top;
+	article {
+		padding: 0 0 30px 0;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $c-lgrey;
+		header {
+
+		}
+		.entry-header {
+			h2 {
+
+			}
+		}
+		.entry-content {
+
+		}
+		.entry-footer {
+			.author {
+				img {
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 10px;
+				}
+			}
+			.posted-on {
+				float: right;
+				line-height: 50px;
+			}
+			.comments-link {
+				display: block;
+				float: right;
+				clear: right;
+			}
+		}
+	}
+}
+
+.blog-sidebar {
+	padding: 30px 20px;
+	margin-top: 30px;
+	width: 22%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	background: lighten($c-lgrey, 15%);
+	.widget:not(:last-child) {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $c-lgrey;
+	}
+	.widget {
+		ul {
+			li {
+				padding: 4px 0;
+			}
+		}
+	}
+	.search-form {
+		button {
+			font-family: 'rsficon';
+			font-size: 16px;
+			text-transform: none;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-left: -40px;
+		}
+		input[type="search"] {
+			height: 30px;
+			width: calc(100% - 20px);
+			@include border-left-radius(3px);
+		}
+	}
+}

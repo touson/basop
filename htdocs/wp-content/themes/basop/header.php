@@ -19,6 +19,8 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php //wp_head(); ?>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
 </head>
 

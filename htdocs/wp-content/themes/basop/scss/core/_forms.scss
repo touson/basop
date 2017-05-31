@@ -32,16 +32,27 @@ input[type="text"],
 input[type="url"],
 select {
     height: auto;
-    width: 100% !important;
+    width: 100%;
 }
 
 textarea {
     min-height: 97px;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 /* Primary Buttons */
 .button,
 button {
-    @include button($c-text, $c-button, $c-button-hover);
-    @include border-radius(3px); 
+    @include button($c-white, $c-button, $c-button-hover);
+    @include border-radius(3px);
+}
+
+input[type="submit"] {
+	@include button($c-white, $c-button, $c-button-hover);
 }

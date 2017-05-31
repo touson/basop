@@ -42,7 +42,7 @@ function basop_entry_meta() {
 	}
 
 	if ( 'post' === get_post_type() ) {
-		basop_entry_taxonomies();
+		//basop_entry_taxonomies();
 	}
 
 	if ( ! is_singular() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {

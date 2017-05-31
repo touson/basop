@@ -1,11 +1,13 @@
 .home {
     .page-header {
-        min-height: auto;
+        .container {
+        	min-height: 400px;
+        }
         .intro-block {
             background: rgba(0,0,0,0.7);
             color: $c-white;
-            margin-top: 50px;
-            margin-bottom: 20px;
+            margin-top: 70px;
+            margin-bottom: 40px;
             padding: 20px;
             h1 {
                 font-size: $f-size;

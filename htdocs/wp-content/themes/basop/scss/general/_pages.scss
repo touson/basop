@@ -6,6 +6,46 @@
     }
 }
 
+.map {
+	height: 300px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.committee-members {
+	overflow: hidden;
+	margin-bottom: 30px;
+	.member {
+		width: 200px;
+		float: left;
+		margin: 0 10px;
+		text-align: center;
+		padding-bottom: 30px;
+		img {
+			margin-bottom: 20px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		br {
+			display: none;
+		}
+	}
+	.name {
+		span,
+		strong,
+		a {
+			display: block;
+		}
+		strong {
+			margin-bottom: 8px;
+		}
+		span {
+			line-height: 18px;
+		}
+	}
+}
+
 @include bp(min-width, $bp-xsmall + 1) {
 
 }

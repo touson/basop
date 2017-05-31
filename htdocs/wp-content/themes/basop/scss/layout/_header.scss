@@ -4,64 +4,65 @@
  * Header
  * ============================================ */
 
-header {
+body {
+	& > header {
+	    background: $c-white;
+	    border-bottom: 30px solid $c-dgrey;
+	    overflow: hidden;
+	    padding-top: 20px;
+	    width: 100%;
 
-    background: $c-white;
-    border-bottom: 30px solid $c-dgrey;
-    overflow: hidden;
-    padding-top: 20px;
-    width: 100%;
+	    #logo {
+	        display: block;
+	        float: left;
+	        margin-top: -3px;
+	        img {
+	            height: 50px;
+	        }
+	    }
 
-    #logo {
-        display: block;
-        float: left;
-        margin-top: -3px;
-        img {
-            height: 50px;
-        }
-    }
+	    nav {
+	        width: calc(100% + 60px);
+	        margin-left: -30px;
+	        position: relative;
+	        bottom: 0;
+	        padding-top: 20px;
+	        max-height: 0;
+	        overflow: hidden;
+	        @include transition(all 0.3s ease-in-out);
+	        &.active {
+	            max-height: 350px;
+	        }
+	        ul {
+	            li {
+	                display: block;
+	                border-top: 1px solid $c-grey;
+	                a {
+	                    padding: 12px 20px;
+	                    display: block;
+	                    font-size: 14px;
+	                    &:active,
+	                        &:hover {
+	                        background: $c-grey;
+	                    }
+	                }
+	            }
+	        }
+	    }
 
-    nav {
-        width: calc(100% + 60px);
-        margin-left: -30px;
-        position: relative;
-        bottom: 0;
-        padding-top: 20px;
-        max-height: 0;
-        overflow: hidden;
-        @include transition(all 0.3s ease-in-out);
-        &.active {
-            max-height: 350px;
-        }
-        ul {
-            li {
-                display: block;
-                border-top: 1px solid $c-grey;
-                a {
-                    padding: 12px 20px;
-                    display: block;
-                    font-size: 14px;
-                    &:active,
-                        &:hover {
-                        background: $c-grey;
-                    }
-                }
-            }
-        }
-    }
-
-    #nav-trigger {
-        font-family: rsficon;
-        display: block;
-        float: right;
-        font-size: 29px;
-        line-height: 31px;
-        margin-top: 10px;
-        color: $c-dgrey;
-        &:hover {
-            color: $c-link-hover;
-        }
-    }
+	    #nav-trigger {
+	        font-family: rsficon;
+	        display: block;
+	        float: right;
+	        font-size: 29px;
+	        line-height: 31px;
+	        margin-top: 10px;
+	        color: $c-dgrey;
+	        &:hover {
+	            color: $c-link-hover;
+	        }
+	    }
+	}
 }
 
 @include bp(min-width, $bp-small + 1) {
@@ -69,58 +70,62 @@ header {
 }
 
 @include bp(min-width, $bp-medium + 1) {
-    header {
-        padding-top: 26px;
-        padding-bottom: 20px;
-        #nav-trigger {
-            display: none;
-        }
-        nav {
-            float: right;
-            text-align: right;
-            max-width: 83%;
-            max-height: 100px;
-            ul {
-                font-size: 0;
-                li {
-                    display: inline-block;
-                    border-top: none;
-                    a {
-                        display: block;
-                        line-height: 15px;
-                        font-size: $f-size-xs;
-                        text-align: center;
-                        margin: 8px 0;
-                        padding: 0 13px;
-                        color: $c-text;
-                        border-left: 1px solid $c-lgrey;
-                        &:hover {
-                            color: $c-link-hover;
-                            background: none;
-                        }
-                    }
-                    &:first-of-type {
-                        a {
-                            border-left: none;
-                        }
-                    }
-                }
-            }
-        }
+    body {
+		& > header {
+	        padding-top: 26px;
+	        padding-bottom: 20px;
+	        #nav-trigger {
+	            display: none;
+	        }
+	        nav {
+	            float: right;
+	            text-align: right;
+	            max-width: 83%;
+	            max-height: 100px;
+	            ul {
+	                font-size: 0;
+	                li {
+	                    display: inline-block;
+	                    border-top: none;
+	                    a {
+	                        display: block;
+	                        line-height: 15px;
+	                        font-size: $f-size-xs;
+	                        text-align: center;
+	                        margin: 8px 0;
+	                        padding: 0 13px;
+	                        color: $c-text;
+	                        border-left: 1px solid $c-lgrey;
+	                        &:hover {
+	                            color: $c-link-hover;
+	                            background: none;
+	                        }
+	                    }
+	                    &:first-of-type {
+	                        a {
+	                            border-left: none;
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
     }
 }
 
 @include bp(min-width, $bp-large + 1) {
-    header {
-        nav {
-            ul {
-                li {
-                    a {
-                        font-size: $f-size-xl;
-                    }
-                }
-            }
-        }
+    body {
+		& > header {
+	        nav {
+	            ul {
+	                li {
+	                    a {
+	                        font-size: $f-size-xl;
+	                    }
+	                }
+	            }
+	        }
+	    }
     }
 }
 

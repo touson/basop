@@ -1,7 +1,9 @@
 .production-archive {
+	padding-bottom: 20px;
     li {
         width: 100%;
         padding: 20px;
+        margin-bottom: 30px;
         @include box-shadow(0 0 10px rgba(0,0,0,0.3));
         &:hover {
             @include background-image(linear-gradient(to bottom right, white, lighten($c-lgrey, 15%)));
@@ -24,6 +26,19 @@
         }
         margin-bottom: 10px;
     }
+}
+
+.production-list {
+	display: block;
+	margin-bottom: 0;
+	li {
+		padding: 6px 8px;
+	}
+	.year {
+		font-weight: bold;
+		margin-right: 6px;
+	    font-size: 15px;
+	}
 }
 
 @include bp(min-width, $bp-xsmall + 1) {
@@ -74,6 +89,19 @@
                 width: 58%;
             }
         }
+    }
+    .production-list {
+    	float: left;
+    	margin-right: 30px;
+    	li {
+    		padding: 6px 8px;
+    		&:hover {
+    			background: lighten($c-lgrey, 12%);
+    			.year {
+    				color: $c-red-3;
+    			}
+    		}
+    	}
     }
 }
 

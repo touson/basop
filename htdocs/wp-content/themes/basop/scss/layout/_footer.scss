@@ -4,21 +4,23 @@
 *  Footer
 * ============================================ */
 
-footer {
-    margin-top: 30px;
-    padding-top: 30px;
-    background-color: $c-red-4;
-    border-top: 30px solid $c-dgrey;
-    color:$c-white;
-    .copyright {
-        font-size: $f-size-s;
-        font-weight: $f-weight-light;
-        text-align: center;
-        margin-top: 30px;
-    }
-    .container {
-        overflow: hidden;
-    }
+body {
+	& > footer {
+	    margin-top: 30px;
+	    padding-top: 30px;
+	    background-color: $c-red-4;
+	    border-top: 30px solid $c-dgrey;
+	    color:$c-white;
+	    .copyright {
+	        font-size: $f-size-s;
+	        font-weight: $f-weight-light;
+	        text-align: center;
+	        margin-top: 30px;
+	    }
+	    .container {
+	        overflow: hidden;
+	    }
+	}
 }
 
 .footer-block {
@@ -61,6 +63,12 @@ footer {
             &:first-of-type {
                 margin-left: 0;
             }
+            a {
+            	color: $c-white;
+            	&:hover {
+            		color: $c-red-1;
+            	}
+            }
         }
     }
     .script {
@@ -71,10 +79,19 @@ footer {
         max-width: 80%;
         margin: 0 auto 40px;
     }
-    address {
-        font-size: $f-size-s;
-        line-height: 18px;
-    }
+}
+
+#menu-footer {
+	li {
+		padding: 4px 0;
+		a {
+			font-size: 14px;
+			color: $c-white;
+			&:hover {
+				color: $c-red-1;
+			}
+		}
+	}
 }
 
 // ========================

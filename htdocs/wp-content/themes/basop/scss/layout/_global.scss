@@ -1,0 +1,33 @@
+#main-container {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 30px;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+    }
+}
+
+.full-width {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+[class^="col-"] {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.col-2 {
+	width: 46.5%;
+	margin-right: 5%;
+	&:nth-of-type(2n) {
+		margin-right: 0;
+	}
+}

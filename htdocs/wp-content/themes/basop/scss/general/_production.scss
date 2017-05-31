@@ -20,6 +20,23 @@
             &:last-of-type {
                 margin-bottom: 0;
             }
+            &.divider,
+	        &.paypal {
+	        	border-top: 1px solid $c-lgrey;
+	        	padding-top: 20px;
+	        	width: 100%;
+	        	p {
+	        		margin-bottom: 20px;
+	        	}
+	        }
+	        a{
+	        	color: $c-black;
+	        	text-decoration: underline;
+	        	&:hover {
+	        		text-decoration: none;
+	        		color: $c-red-3;
+	        	}
+	        }
         }
         h3 {
             color: $c-red-3;
@@ -85,23 +102,34 @@
                 display: block;
                 text-align: left;
                 width: 100%;
+                padding-bottom: 4px;
+                margin-bottom: 4px;
+                border-bottom: 1px solid $c-lgrey;
                 span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                & > span {
                     line-height: 15px;
-                    padding-bottom: 10px;
+                    width: 49%;
+					display: inline-flex;
+					justify-content: left;
+					align-items: center;
                 }
                 .name {
                     font-weight: bold;
-                    width: 50%;
-                    display: inline-block;
-                    vertical-align: top;
                 }
                 .role {
-                    display: inline-block;
-                    vertical-align: top;
                 }
             }
         }
     }
+}
+
+#production-gallery {
+	padding-top: 30px;
+	margin-top: 20px;
+	border-top: 1px solid $c-lgrey;
 }
 
 @include bp(min-width, $bp-xsmall + 1) {
@@ -111,7 +139,7 @@
             .details-block {
                 display: inline-block;
                 width: 50%;
-                &:nth-of-type(1n+3) {
+                &:last-of-type {
                     margin-bottom: 0;
                 }
             }

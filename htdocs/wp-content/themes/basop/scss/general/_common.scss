@@ -3,27 +3,6 @@
 /* ============================================ *
  * Common styling elements
  * ============================================ */
-
-#main-container {
-    padding: 30px 0;
-    width: 100%;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 30px;
-    img {
-        max-width: 100%;
-    }
-}
-
-.full-width {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 .cta {
     display: inline-block;
     &:after {
@@ -35,36 +14,47 @@
     }
 }
 
+$header-colour: $c-white;
+
 .page-header {
-    position: relative;
     margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    @include background-size(cover);
-    min-height: 300px;
+    background: $header-colour;
+    .container {
+    	@include background-size(cover);
+    	background-position: center center;
+    	background-repeat: no-repeat;
+	    min-height: 200px;
+	    position: relative;
+    }
     .title {
-    	line-height: 80px;
-    	font-size: 40px;
+    	line-height: 60px;
+    	font-size: 30px;
     	color: $c-white;
     	background: rgba(0,0,0,0.6);
     	position: absolute;
     	left: 0;
-    	top: 60%;
+    	bottom: 10%;
     	text-align: right;
     	padding: 0 30px
     }
 }
 
 @include bp(min-width, $bp-xsmall + 1) {
-
+	.page-header {
+	    .container {
+	    	min-height: 300px;
+		}
+	}
 }
 
 @include bp(min-width, $bp-small + 1) {
 	.page-header {
+	    .container {
+	    	min-height: 400px;
+		}
 	    .title {
 	    	line-height: 80px;
 	    	font-size: 40px;
-	    	top: 60%;
 	    	padding-left: 60px;
 	    }
 	}
@@ -80,6 +70,9 @@
 
 @include bp(min-width, $bp-large + 1) {
 	.page-header {
+	    .container {
+	    	min-height: 500px;
+		}
 	    .title {
 	    	padding-left: 140px;
 	    }
@@ -93,4 +86,24 @@
 	    	right: 60%;
 	    }
 	}
+}
+
+/**
+ * 8.0 - Alignments
+ */
+
+.alignleft {
+	float: left;
+	margin: 0.375em 1.75em 1.75em 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0.375em 0 1.75em 1.75em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto 1.75em;
 }

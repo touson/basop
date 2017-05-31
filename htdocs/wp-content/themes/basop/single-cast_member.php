@@ -7,24 +7,28 @@
  * @since Basop 1.0
  */
 
-get_header(); ?>
+get_header();
 
-<?php
 if (have_posts()) {
 	while (have_posts()) {
-		the_post(); ?>
+		the_post();
+		// Output page header
+		$image = wp_get_attachment_image_src(get_post_thumbnail_id(get_page_by_title('home')->ID),'full') ;?>
 
-		<div id="main-container">
+			<?php echo page_header($image[0], 'Cast Members');?>
+
 			<div class="container">
 
 				<div class="main-bio">
-					<img src="<?php echo get_post(get_post_meta($post->ID, '_image_id')[0])->guid;?>" class="main-bio-image" />
+				<?php
+					$attachId = get_post_meta($post->ID, '_image_id')[0];
+				?>
+					<img src="<?php echo wp_get_attachment_url($attachId);?>" class="main-bio-image" />
 					<h1><?php the_title();?></h1>
 					<?php the_content();?>
 				</div>
 
 			</div>
-		</div>
 
 		<?php
 	}

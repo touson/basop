@@ -32,8 +32,8 @@ while(have_posts())
     ?>
 
     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full'); ?>
-    <div class="page-header" style="background-image:url(<?php echo $image[0];?>)">
-        <div class="container">
+    <div class="page-header">
+        <div class="container" style="background-image:url(<?php echo $image[0];?>)">
             <div class="intro-block">
                 <h1><?php echo get_post_meta($post->ID, 'Title', true)?></h1>
                 <?php the_content();?>

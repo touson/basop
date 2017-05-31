@@ -25,23 +25,29 @@
 				</div>
 				<div class="footer-block middle">
 					<ul class="social">
-						<li>f</li>
-						<li>w</li>
-						<li>k</li>
-						<li>i</li>
-						<li>y</li>
+						<li><a href="https://www.facebook.com/BasildonOperatic/" target="_blank">f</a></li>
+						<li><a href="https://twitter.com/BasOperatic" target="_blank">w</a></li>
+						<li><a href="http://www.basop.org.uk" target="_blank">y</a></li>
 					</ul>
 					<h3 class="script">"Bringing the big shows to the small stage"</h3>
 				</div>
 				<div class="footer-block right">
-					<h4>Get in touch</h4>
-					<address>
-						Basildon Operatic Society<br />
-						5 Eagerton Drive<br />
-						Langdon Hills<br />
-						Basildon<br />
-						Essex.  SS16 6EE
-					</address>
+					<?php
+					if (has_nav_menu('footer'))
+					{
+						?>
+						<nav role="navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'basop' ); ?>" id="footer-nav">
+						<h4>Further Info</h4>
+							<?php
+							wp_nav_menu(array(
+								'theme_location' => 'footer',
+								'menu_class'     => 'footer-menu',
+							));
+							?>
+						</nav>
+						<?php
+					}
+					?>
 				</div>
 				<p class="copyright">Copyright &copy; Basildon Operatic Society <?php date('Y');?></p>
 			</div>
@@ -49,7 +55,6 @@
 
 	</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri();?>/js/core.js"></script>
 
 </body>

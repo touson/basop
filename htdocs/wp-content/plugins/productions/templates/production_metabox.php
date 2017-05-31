@@ -17,18 +17,26 @@
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="director">Director</label>
+            <label for="ticket_url">Ticket cost</label>
         </th>
         <td>
-            <input type="text" id="director" name="director" value="<?php echo @get_post_meta($post->ID, 'director', true); ?>" />
+            <input type="text" id="ticket_cost" name="ticket_cost" value="<?php echo @get_post_meta($post->ID, 'ticket_cost', true); ?>" />
         </td>
     </tr>
     <tr valign="top">
         <th class="metabox_label_column">
-            <label for="ticket_url">Ticket sales URL</label>
+            <label for="ticket_url">Box office URL</label>
         </th>
         <td>
-            <input type="text" id="ticket_url" name="ticket_url" value="<?php echo @get_post_meta($post->ID, 'ticket_url', true); ?>" />
+            <input type="text" id="box_office" name="box_office" value="<?php echo @get_post_meta($post->ID, 'box_office', true); ?>" />
+        </td>
+    </tr>
+    <tr valign="top">
+        <th class="metabox_label_column">
+            <label for="ticket_url">Gallery</label>
+        </th>
+        <td>
+            <input type="text" id="gallery" name="gallery" value="<?php echo @get_post_meta($post->ID, 'gallery', true); ?>" />
         </td>
     </tr>
 </table>

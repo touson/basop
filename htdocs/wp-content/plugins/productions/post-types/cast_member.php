@@ -26,7 +26,7 @@ if(!class_exists('Cast_Member'))
         {
             // Initialize Post Type
             $this->create_post_type();
-            //add_action('save_post', array($this, 'save_post'));
+            #add_action('save_post', array($this, 'save_post'));
         }
 
         /**
