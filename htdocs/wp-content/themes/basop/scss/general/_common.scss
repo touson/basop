@@ -14,18 +14,13 @@
     }
 }
 
-$header-colour: $c-white;
-
 .page-header {
+    position: relative;
     margin-bottom: 30px;
-    background: $header-colour;
-    .container {
-    	@include background-size(cover);
-    	background-position: center center;
-    	background-repeat: no-repeat;
-	    min-height: 200px;
-	    position: relative;
-    }
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include background-size(cover);
+    min-height: 200px;
     .title {
     	line-height: 60px;
     	font-size: 30px;
@@ -40,18 +35,11 @@ $header-colour: $c-white;
 }
 
 @include bp(min-width, $bp-xsmall + 1) {
-	.page-header {
-	    .container {
-	    	min-height: 300px;
-		}
-	}
+
 }
 
 @include bp(min-width, $bp-small + 1) {
 	.page-header {
-	    .container {
-	    	min-height: 400px;
-		}
 	    .title {
 	    	line-height: 80px;
 	    	font-size: 40px;
@@ -70,9 +58,6 @@ $header-colour: $c-white;
 
 @include bp(min-width, $bp-large + 1) {
 	.page-header {
-	    .container {
-	    	min-height: 500px;
-		}
 	    .title {
 	    	padding-left: 140px;
 	    }
